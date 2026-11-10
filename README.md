@@ -17,14 +17,18 @@ wget https://raw.githubusercontent.com/Doeca/trae_onboard/main/trae-onboard.sh
 
 只跑一条命令即可，按提示输入管理员邮箱和密码。
 
-### `bash activate-seats.sh`
+```bash
+bash activate-seats.sh
+```
 
 开通席位。创建 Mail.tm 临时邮箱 → 用管理员账号发出企业邀请 → 从邮件里取邀请码 → 注册激活 → 核对成员列表和 Full 配额，直到席位填满或没有空位。
 
 - 已激活的账号不会重复创建，未完成的记录会按远端状态清理后重来。
 - 每次都会先核对配额：待邀请人数超过空闲席位时停止，不会超额。
 
-### `bash magpie-login.sh`
+```bash
+bash magpie-login.sh
+```
 
 导入 Magpie。读取 `data/accounts.json` 里已激活的账号，逐个登录 TRAE、走本地回调完成 Magpie 授权，并校验目标 UID 已写入 Magpie 账号库。
 
