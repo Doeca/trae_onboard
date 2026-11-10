@@ -2,6 +2,17 @@
 
 自动占用企业 TRAE 的 Full 席位，并把新账号导入 Magpie。全程断点续跑，可重复执行。
 
+## 安装
+
+```bash
+mkdir -p trae_onboard && cd trae_onboard
+wget https://raw.githubusercontent.com/Doeca/trae_onboard/main/activate-seats.sh
+wget https://raw.githubusercontent.com/Doeca/trae_onboard/main/magpie-login.sh
+wget https://raw.githubusercontent.com/Doeca/trae_onboard/main/trae-onboard.sh
+```
+
+两个入口脚本共用 `trae-onboard.sh`，三个文件要放在同一目录。
+
 ## 用法
 
 只跑一条命令即可，按提示输入管理员邮箱和密码。
