@@ -1,0 +1,10 @@
+# Local credentials, captures, and transient state
+/data/
+*.har
+*.cookies
+*.log
+*.lock/
+*.tmp.*
+.trae-onboard.*/
+.DS_Store
+/tests/
